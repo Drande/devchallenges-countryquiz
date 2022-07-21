@@ -1,5 +1,5 @@
 <template>
-    <div class="card">
+    <div :class="'card' + (label ? ' labeled' : '')">
         <h1 v-if="label" class="header-2 color-white-1">{{label}}</h1>
         <slot></slot>
     </div>
@@ -26,7 +26,12 @@ export default defineComponent({
         position: absolute;
     }
 
+    .labeled {
+        margin-top: 74px;
+    }
     .card {
+        display: flex;
+        flex-direction: column;
         padding: 2rem;
         position: relative;
         min-height: 542px;

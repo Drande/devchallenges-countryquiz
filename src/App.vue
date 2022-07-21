@@ -1,5 +1,18 @@
-<script setup lang="ts">
+
+
+<script lang="ts">
 import { RouterView } from 'vue-router'
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+  setup () {
+    
+
+    return {}
+  },
+  components: { RouterView }
+})
+
 </script>
 
 <template>
@@ -14,7 +27,10 @@ import { RouterView } from 'vue-router'
 
 <style scoped>
   .router-content {
+    display: flex;
+    flex-direction: column;
     width: 100vw;
     height: calc(100vh - 80px);
+    overflow-y: auto;
   }
 </style>
