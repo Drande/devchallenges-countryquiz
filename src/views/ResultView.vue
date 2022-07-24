@@ -3,7 +3,7 @@
   <main>
     <Card label="Country quiz">
       <div class="content-container">
-        <img src="src/assets/undraw_winners_ao2o 2.svg">
+        <img src="../assets/undraw_winners_ao2o_2.svg">
         <div class="column align-items-center">
           <h3 class="header-1">Results</h3>
           <p class="body-copy">You got <span class="header-2 color-green">{{score}}</span> correct answers</p>

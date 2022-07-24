@@ -1,7 +1,7 @@
 <template>
   <main>
     <Card label="Country quiz">
-      <img class="upper-right-image" src="src/assets/undraw_adventure_4hum 1.svg">
+      <img class="upper-right-image" src="../assets/undraw_adventure_4hum_1.svg">
       <div class="quiz-container" v-if="quiz">
         <template v-if="quiz?.type==='capital'">
           <h3 class="header-3 color-indigo">{{quiz.data.capital[0]}} is the capital of</h3>
